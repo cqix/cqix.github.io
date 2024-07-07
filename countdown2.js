@@ -1,20 +1,20 @@
-// countdown.js
-const countdownElement = document.getElementById('time');
+// countdown2.js
+const countdownElement2 = document.getElementById('time2');
 
 // Set the date we're counting down to
-const countdownDate =  new Date('July 13, 2024 10:40:00');
-const countdownDateInt = countdownDate.getTime();
+const countdownDate2 =  new Date('July 13, 2024 10:40:00');
+const countdownDateInt2 = countdownDate2.getTime();
 
-document.getElementById('starttime').innerHTML = countdownDate.toLocaleString();
+document.getElementById('starttime2').innerHTML = countdownDate2.toLocaleString();
 
 // Update the count down every 1 second
-const x = setInterval(function() {
+const x2 = setInterval(function() {
 
     // Get today's date and time
     const now = new Date().getTime();
 
     // Find the distance between now and the count down date
-    const distance = countdownDateInt - now;
+    const distance = countdownDateInt2 - now;
 
     // Time calculations for days, hours, minutes and seconds
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -23,11 +23,11 @@ const x = setInterval(function() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="time"
-    countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    countdownElement2.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        countdownElement.innerHTML = "Flight has departed";
+        countdownElement2.innerHTML = "Flight has departed";
     }
 }, 1000);

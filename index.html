@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Countdown</title>
+    <title>Vacation Countdown</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,21 +13,28 @@
             height: 100vh;
             background-color: #f0f0f0;
         }
-        #countdown {
+        .countdown {
             text-align: center;
+            min-width: 50vw;
         }
-        #countdown div {
+        .countdown div {
             font-size: 2em;
             margin: 10px 0;
         }
     </style>
 </head>
 <body>
-<div id="countdown">
-    <h1>Countdown to Flight UA9823 / OS91</h1>
-    <div id="starttime"></div>
-    <div id="time"></div>
+<div class="countdown">
+    <h1>Countdown to Train RJ 656</h1>
+    <div id="starttime1"></div>
+    <div id="time1"></div>
 </div>
-<script src="countdown.js"></script>
+<div class="countdown">
+    <h1>Countdown to Flight UA9823 / OS91</h1>
+    <div id="starttime2"></div>
+    <div id="time2"></div>
+</div>
+<script src="countdown1.js"></script>
+<script src="countdown2.js"></script>
 </body>
 </html>
